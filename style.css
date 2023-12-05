@@ -1,0 +1,696 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+@font-face {
+    font-family: "Gilroy-b";
+    src: url('./Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Gilroy-r";
+    src: url('./Gilroy-Regular.ttf');
+}
+
+.nav {
+    background-color: #f7f8fc;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 8vw;
+    position: fixed;
+    box-shadow: 0px 4px 10px 0px rgba(157, 157, 157, 0.2);
+    z-index: 999;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.nav-links {
+    font-family: "Gilroy-r";
+    font-size: 2.5vh;
+    color: #000000c4;
+}
+
+
+
+.nav-btn button {
+    padding: 2vh 3vw;
+    border-radius: 0.5vw;
+    border: none;
+    font-family: sans-serif;
+    font-size: 2.4vh;
+    font-weight: 500;
+    margin-left: 0.3vw;
+}
+
+.nav-btn .btn1 {
+    border: 1px solid #6674cc;
+    color: black;
+    background-color: transparent;
+}
+
+.nav-btn .btn2 {
+    background-color: #6674cc;
+    color: #ffffff;
+    padding: 2vh 4.3vw;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page1 {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    position: relative;
+}
+
+.page1-left {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgba(255, 0, 0, 0.505); */
+    padding-top: 41vh;
+    padding-left: 7.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh 0vh;
+}
+
+.page1-left h1 {
+    font-family: "Gilroy-b";
+    font-size: 8vh;
+    color: #6674cc;
+}
+
+.page1-left h1 span {
+    color: #363a45;
+}
+
+.page1-left h3 {
+    color: #4a4f5c;
+    font-family: 'Gilroy-r';
+    font-size: 4.9vh;
+}
+
+
+
+
+.page1-btn button {
+    padding: 3vh 2.7vw;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400;
+    border-radius: 1vh;
+    border: none;
+}
+
+.page1-btn .btn1 {
+    background-color: #6674cc;
+    color: #ffffff;
+}
+
+.page1-btn .btn2 {
+    border: 1px solid #6674cc;
+    color: black;
+    background-color: transparent;
+    margin-left: 1.3vh;
+}
+
+.page1 .student {
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1.7vw;
+    margin-left: 1vw;
+    margin-top: 4vh;
+}
+
+
+.student-pic img {
+    height: 6vh;
+    width: 6vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -1.2vw;
+}
+
+.student .stats {
+    font-family: "Gilroy-b";
+}
+
+.student .stats span {
+    font-family: sans-serif;
+    color: #777c85;
+    font-size: 2.4vh;
+}
+
+
+.page1-right {
+    width: 50%;
+    height: 100%;
+    /* background-color: magenta; */
+    overflow: hidden;
+    background-image: url("https://cdn.thecodehelp.in/mctmmnscw4snaoc9kmnn_b35808d374.svg");
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.page1-right img {
+    /* background-color: red; */
+    width: 45vw;
+
+}
+
+/* not adding fly icons because image already have those icon at fixed place */
+.page1-fly-icon {
+    /* background-color: red; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.page1-fly-icon img {
+    width: 30vh;
+    height: 30vh;
+}
+
+.fly-icon1 {
+    position: absolute;
+    left: 30px;
+    top: 20vh;
+}
+
+
+.fly-icon2 {
+    position: absolute;
+    left: 20vw;
+    top: 55vh;
+}
+
+
+.page2 {
+    width: 100%;
+    height: 33.4vh;
+    background-color: #6674cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page2 .img-left-b {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    scale: 1.3;
+}
+
+.page2 .img-left-t {
+    position: absolute;
+    top: -1.9vh;
+    left: -3.7vw;
+    scale: 0.6;
+
+}
+
+
+.page2 .img-right-b {
+    position: absolute;
+    bottom: -1.9vh;
+    right: -3.7vw;
+    scale: 0.6;
+
+}
+
+.page2 .img-right-t {
+    position: absolute;
+    right: 0;
+    top: 0;
+    scale: 1.3;
+    transform: rotate(180deg)
+}
+
+.page2-card {
+    /* background-color: red; */
+    border-right: 1px solid white;
+    text-align: center;
+    width: 20vw;
+    height: 18vh;
+}
+
+.page2-card:last-child {
+    border-right: none;
+}
+
+.page2-card h1 {
+    font-family: "Gilroy-b";
+    color: white;
+    font-size: 7vh;
+    text-transform: uppercase;
+
+}
+
+
+.page2-card p {
+    color: white;
+    font-family: "Gilroy-r";
+    font-weight: 900;
+    font-size: 2.2vh;
+    margin-top: 1vh;
+    line-height: 3vh;
+}
+
+.page2-card p span {
+    /* text-decoration: underline; */
+}
+
+.page3 {
+    height: 170vh;
+    width: 100%;
+    background-color: #f7f8fc;
+    position: relative;
+}
+
+
+.page3>img {
+    position: absolute;
+    left: 0;
+    top: 8vh;
+}
+
+.page3-content {
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 16vh;
+}
+
+.page3-content p {
+    color: #6674cc;
+    font-family: "Gilroy-b";
+    font-size: 2.9vh;
+    text-transform: uppercase;
+}
+
+.page3-content h1 {
+    color: #011229;
+    font-family: "Gilroy-b";
+    font-size: 6vh;
+    line-height: 8.7vh;
+}
+
+.page3-cards {
+    /* background-color: crimson; */
+    margin-top: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120vh;
+    gap: 1.6vw;
+}
+
+.page3-cards .card {
+    width: 25vw;
+    height: 49vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1);
+    border-radius: 1vh;
+    padding: 0vh 2vw;
+    transition: all ease-in-out 0.2s;
+}
+
+.page3-cards .card:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.page3-cards .card1 {
+    border-bottom: 1vh solid rgb(1 162 142 / 39%);
+}
+
+.page3-cards .card1 .card-icon {
+    background-color: rgb(1 162 142 / 39%);
+}
+
+.page3-cards .card2 {
+    border-bottom: 1vh solid rgb(229 48 62 / 39%);
+}
+
+.page3-cards .card2 .card-icon {
+    background-color: rgb(229 48 62 / 39%);
+}
+
+.page3-cards .card3 {
+    border-bottom: 1vh solid rgb(177 163 254);
+}
+
+.page3-cards .card3 .card-icon {
+    background-color: rgb(177 163 254);
+}
+
+.page3-cards .card4 {
+    border-bottom: 1vh solid rgb(163 203 224);
+}
+
+.page3-cards .card4 .card-icon {
+    background-color: rgb(163 203 224);
+}
+
+.page3-cards .card5 {
+    border-bottom: 1vh solid rgb(166 217 254);
+}
+
+.page3-cards .card5 .card-icon {
+    background-color: rgb(166 217 254);
+}
+
+.page3-cards .card6 {
+    border-bottom: 1vh solid rgb(253 200 164);
+}
+
+.page3-cards .card6 .card-icon {
+    background-color: rgb(253 200 164);
+}
+
+
+
+
+
+.page3-cards .card .card-icon {
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+    /* color: #01a28e; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-cards .card h3 {
+    font-family: "Gilroy-b";
+
+}
+
+.page3-cards .card p {
+    color: #777c85;
+    font-family: sans-serif;
+    font-size: 2.4vh;
+}
+
+
+.page4 {
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.page4>img {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -30vh;
+
+}
+
+.page4-content {
+    display: flex;
+    flex-direction: column;
+    padding: 6vh 8vw;
+    /* background-color: crimson; */
+}
+
+.page4-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #011229;
+    padding-bottom: 3vh;
+    /* background-color: crimson; */
+}
+
+.page4-top h1 {
+    font-family: "Gilroy-b";
+    font-size: 6vh;
+    color: #011229;
+}
+
+.page4-top h1 span {
+    color: #6674cc;
+}
+
+.page4-top button {
+    background-color: #6674cc;
+    padding: 2.7vh 2.5vw;
+    color: white;
+    font-size: 2.7vh;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 0.7vw;
+}
+
+.page4-middle {
+    width: 100%;
+    height: 60vh;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.page4-middle img {
+    width: 36vh;
+    height: 36vh;
+}
+
+.page4-middle h1 {
+    font-family: "Gilroy-b";
+}
+
+.page4-middle h3 {
+    color: #777c85;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 3.2vh;
+    letter-spacing: 0.1vw;
+}
+
+
+.page4-bottom {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 14vh;
+
+}
+
+.page4-bottom-card {
+    text-align: center;
+    /* background-color: pink; */
+}
+
+.page4-bottom-card h3 {
+    font-family: "Gilroy-r";
+    color: #4a4f5c;
+    font-weight: 200;
+    font-size: 1.4vw;
+}
+
+
+.page5 {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+
+}
+
+.page5-line {
+    position: absolute;
+    width: 50%;
+    background-image: linear-gradient(to right, #585e6c, #f9f9fa);
+    height: 1px;
+}
+
+.page5-left {
+    height: 100%;
+    width: 56%;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page5-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.page5-left h3 {
+    color: #6674cc;
+    font-family: sans-serif;
+    font-size: 2.6vh;
+}
+
+.page5-left h1 {
+    font-family: "Gilroy-b";
+    font-size: 6vh;
+    color: #011229;
+    line-height: 6.5vh;
+}
+
+.page5-left h4 {
+    font-family: "Gilroy-r";
+    color: #777c85;
+    font-size: 2.8vh;
+}
+
+.page5-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+}
+
+.page6 {
+    height: 200vh;
+    width: 100%;
+    background-color: #f7f8fc;
+    position: relative;
+    padding: 7vh 6.7vw;
+}
+
+.page6-content {
+    /* background-color: crimson; */
+}
+
+.page6-content>h1 {
+    font-family: "Gilroy-b";
+    color: #011229;
+    font-size: 6vh;
+    text-align: center;
+}
+
+
+.page6-content h1 span {
+    color: #6674cc;
+}
+
+
+
+.page6-cards {
+    display: flex;
+    /* background-color: crimson; */
+    justify-content: space-around;
+    margin-top: 10vh;
+    height: 73vh;
+    border-bottom: 1px solid #011229a7;
+}
+
+.page6-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28vw;
+    height: 55vh;
+    background-color: #ffffff;
+    padding: 3vh 3vh;
+    border-radius: 1.5vh;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+
+
+}
+
+.page6-cards .card img {
+    border-radius: 1.5vh;
+}
+
+.page6-cards .card h1 {
+    font-family: "Gilroy-b";
+    font-size: 3.6vh;
+}
+
+.page6-cards .card span {
+    font-family: "Gilroy-b";
+    font-size: 2.5vh;
+
+}
+
+.purple {
+    color: #6674cc;
+}
+
+.discount {
+    color: #585e6c;
+    text-decoration: line-through;
+}
+
+.discount-percentage {
+    background-color: #1dd1a1;
+    color: white;
+    padding: 0.2vh 1vh;
+    border-radius: 0.5vh;
+}
+
+.comming-soon {
+    background-color: #ff5b5b;
+    color: white;
+    padding: 0.2vh 1vh;
+    border-radius: 0.5vh;
+    text-transform: uppercase;
+    margin-left: 7vw;
+
+}
+
+.margin-t {
+    margin-top: 10vh;
+}
+
+/* .page6-cards .price {
+    background-color: crimson;
+
+} */
+
+
+.page7 {}
