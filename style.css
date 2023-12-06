@@ -693,4 +693,247 @@ body {
 } */
 
 
-.page7 {}
+.page7 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.page7>img {
+    transform: rotate(270deg);
+    position: absolute;
+    top: -8vh;
+    left: -1vw;
+    filter: blur(150px);
+    z-index: -1;
+}
+
+.page7-content {
+    padding: 0vh 7vw;
+}
+
+.page7-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8vh 4vw;
+    border-bottom: 2px solid #ebefffb5;
+}
+
+.page7-top .heading h3 {
+    color: #6674cc;
+    font-family: 'Gilroy-b';
+    text-transform: uppercase;
+    font-size: 2.8vh;
+}
+
+.page7-top .heading h1 {
+    color: #011229;
+    font-family: "Gilroy-b";
+    font-size: 6.4vh;
+}
+
+.page7-btn button {
+    padding: 1.7vh 2.2vw;
+    border-radius: 50px;
+    border: none;
+    margin-left: 1vw;
+}
+
+.page7-btn .btn2 {
+    background-color: #6674cc;
+    color: white;
+}
+
+.page7-btn .btn2 img {
+    filter: invert(1);
+
+}
+
+.page7-bottom {
+    /* background-color: crimson; */
+    display: flex;
+    gap: 10vh;
+    width: 260vw;
+    height: 60vh;
+    margin-top: 20vh;
+
+}
+
+
+.page7-card {
+    width: 33vw;
+    height: 40vh;
+    border-radius: 2vh;
+    /* background-color: crimson; */
+    background-color: #fff;
+    padding: 4vh 3.3vh;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page7-card .review p {
+    --tw-text-opacity: 1;
+    color: rgb(119 124 133/var(--tw-text-opacity));
+    /* color: #d4d5d8; */
+    font-size: 2.3vh;
+    font-family: sans-serif;
+    font-weight: 200;
+    line-height: 3.3vh;
+
+}
+
+.page7-card .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page7-card .profile .profile-detail {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 1vw;
+}
+
+.page7-card .profile .profile-detail img {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+.page7-card .profile .profile-detail .name-course {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+}
+
+.page7-card .profile .profile-detail .name-course h3 {
+    font-family: "Gilroy-b";
+    font-weight: 700;
+    font-size: 2.1vh;
+}
+
+.page7-card .profile .profile-detail .name-course p {
+    font-family: "Gilroy-b";
+    font-size: 1.8vh;
+    color: #777c85aa;
+}
+
+.page7-card .profile .review-star {}
+
+.page7-card .profile .review-star img {
+    fill: goldenrod;
+}
+
+
+.page8 {
+    height: 80vh;
+    width: 100%;
+    background-color: #ffffff;
+    /* background-color: green; */
+    position: relative;
+}
+
+.page8>img {
+    position: absolute;
+}
+
+.page8-content {
+    /* background-color: crimson; */
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+}
+
+.page8-top {
+    text-align: center;
+}
+
+.page8-top h1 {
+    color: #011229;
+    font-family: "Gilroy-b";
+    font-size: 6vh;
+
+}
+
+.page8-top p {
+    margin-top: 2vh;
+    color: #777c85;
+    font-family: "Gilroy-r";
+    font-size: 3vh;
+    text-align: center;
+}
+
+.page8-bottom {
+    display: flex;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    margin-top: 20vh;
+}
+
+.page8-bottom .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.page8-bottom .social-link h1 {
+    font-family: sans-serif;
+    font-size: 3.5vh;
+    display: flex;
+
+
+}
+
+.page8-bottom .social-link h1 img {
+    width: 3vh;
+}
+
+.youtube {
+    color: #ff0000;
+}
+
+.linkedin {
+    color: #0077b5;
+}
+
+.discord {
+    color: #5865f2;
+}
+
+.telegram {
+    color: #229ed9;
+}
+
+.page9 {
+    background-color: #6674cc;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.page9-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: crimson;
+}
+
+.page9-top {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.page9-top .part2 {
+    display: flex;
+}
