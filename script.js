@@ -3,7 +3,7 @@ gsap.to(" .page7 .page7-card   ", {
     scrollTrigger: {
         trigger: ".page7",
         scroller: ".main",
-        markers: true,
+        // markers: true,
         start: "top 4%",
         end: "top -300%",
         scrub: 1,
